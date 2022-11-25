@@ -5,7 +5,8 @@
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint ./src/scripts"
+    "lint": "eslint ./src/scripts",
+    "test": "karma start"
   },
   "keywords": [],
   "author": "",
