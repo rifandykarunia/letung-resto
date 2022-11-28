@@ -17,7 +17,6 @@ class FooterCustom extends HTMLElement {
       max-width: 1170px;
       width: 100%;
       display: flex;
-      padding: 20px 32px;
       justify-content: space-between;
     }
 
