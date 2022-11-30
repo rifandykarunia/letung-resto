@@ -16,7 +16,6 @@ const Detail = {
     const rest = await RestaurantResource.detailRestaurant(url.id);
     const movieContainer = document.querySelector('#restaurant');
     movieContainer.innerHTML = createRestaurantDetailMenu(rest.restaurant);
-
     LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       restaurant: {

@@ -1,4 +1,7 @@
+/* eslint-disable import/no-unresolved */
 import 'regenerator-runtime';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import '../styles/main.css';
 import '../styles/root.css';
 import '../styles/detail.css';

@@ -5,17 +5,13 @@ const Home = {
   async render() {
     return `
     <div class="hero-image">
-        <div class="hero-text">
+           <div class="hero-text">
             <h1 class="hero-title">Kami Menyajikan Makanan & Minuman</h1>
-            <p class="hero-tagline">
-                Hanya Di <b>LetungResto</b>
-            </p>
-        </div>
-    </div>
-    <div class="content">
-        <h2 class="content__heading">LIST RESTAURANT</h2>
-        <div id="restaurants" class="restaurants">
-
+            <p class="hero-tagline">Hanya Di <b>LetungResto</b>
+            </p></div></div>
+            <div class="content">
+            <h2 class="content__heading">LIST RESTAURANT</h2>
+           <div id="restaurants" class="restaurants">
         </div>
     </div>
     `;

@@ -12,19 +12,16 @@ const createRestaurantDetailMenu = (restaurant) => `
           <span>${restaurant.address}</span>
           <h4>Rating</h4>
           <span>⭐️ ${restaurant.rating}</span>
-          
           <h4>Category</h4>
           <div>${restaurant.categories.map((categorie) => `
             <span>${categorie.name}</span>
           `)}</div>
       </div>
     </div>
-
     <div class="description">
       <h3>Detail</h3>
       <p>${restaurant.description}</p>
     </div>
-    
     <div class="detail__menu">
       <h3>LIST MENU</h3>
       <div class="content">
@@ -46,7 +43,6 @@ const createRestaurantDetailMenu = (restaurant) => `
         </div>
       </div>
     </div>
-
     <div class="restaurant__reviews">
       <h3>Review Pelanggan</h3>
       <div>${restaurant.customerReviews.map((customerReview) => `
