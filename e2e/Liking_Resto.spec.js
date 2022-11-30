@@ -1,41 +1,41 @@
 Feature('Liking Resto');
 
 Before(({ I }) => {
-  I.amOnPage('/');
+    I.amOnPage('/');
 });
 
 Scenario('liking one resto', ({ I }) => {
-  I.seeElement('.restaurant-item a');
+    I.seeElement('.restaurant-item a');
 
-  const firsResto = locate('.restaurant-item a').first();
-  I.click(firsResto);
+    const firsResto = locate('.restaurant-item a').first();
+    I.click(firsResto);
 
-  I.seeElement('#likeButton');
-  I.click('#likeButton');
+    I.seeElement('#likeButton');
+    I.click('#likeButton');
 
-  I.amOnPage('/#/like');
+    I.amOnPage('/#/favorite');
 
-  I.seeElement('.restaurant-item a');
+    I.seeElement('.restaurant-item a');
 });
 
 Scenario('unliking one resto', ({ I }) => {
-  I.seeElement('.restaurant-item a');
+    I.seeElement('.restaurant-item a');
 
-  const firstResto = locate('.restaurant-item a').first();
-  I.click(firstResto);
+    const firstResto = locate('.restaurant-item a').first();
+    I.click(firstResto);
 
-  I.seeElement('#likeButton');
-  I.click('#likeButton');
+    I.seeElement('#likeButton');
+    I.click('#likeButton');
 
-  I.amOnPage('/#/like');
+    I.amOnPage('/#/favorite');
 
-  I.seeElement('.restaurant-item a');
+    I.seeElement('.restaurant-item a');
 
-  const firstRestoLike = locate('.restaurant-item a').first();
-  I.click(firstRestoLike);
+    const firstRestoLike = locate('.restaurant-item a').first();
+    I.click(firstRestoLike);
 
-  I.seeElement('#likeButton');
-  I.click('#likeButton');
+    I.seeElement('#likeButton');
+    I.click('#likeButton');
 
-  I.amOnPage('/#/like');
+    I.amOnPage('/#/favorite');
 });

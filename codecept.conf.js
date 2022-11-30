@@ -1,5 +1,3 @@
-/* eslint-disable import/no-unresolved */
-// eslint-disable-next-line import/no-extraneous-dependencies
 const { setHeadlessWhen } = require('@codeceptjs/configure');
 
 // turn on headless mode when running with HEADLESS=true environment variable
@@ -34,4 +32,5 @@ exports.config = {
       enabled: true,
     },
   },
-};
+// eslint-disable-next-line semi
+}

@@ -1,14 +1,9 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable prefer-destructuring */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin');
 const path = require('path');
-// eslint-disable-next-line import/no-unresolved
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
-// eslint-disable-next-line import/no-unresolved
 const ImageminMozjpeg = require('imagemin-mozjpeg');
-// eslint-disable-next-line import/no-unresolved
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {

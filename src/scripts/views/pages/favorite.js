@@ -1,4 +1,5 @@
 import FavoriteRestIdb from '../../data/favorite-rest-idb';
+// eslint-disable-next-line import/extensions
 import createRestaurantItemRestaurant from '../templates/item-restaurant';
 
 const Favorite = {
@@ -7,6 +8,7 @@ const Favorite = {
       <div class="content">
         <h2 class="content__heading">Restauran Favorit Kamu</h2>
         <div id="restaurants" class="restaurants">
+ 
         </div>
       </div>
     `;

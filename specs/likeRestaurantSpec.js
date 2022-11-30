@@ -1,20 +1,20 @@
 import FavoriteRestIdb from '../src/scripts/data/favorite-rest-idb';
 import * as TestFactories from './helpers/testFactories';
 
-describe('Liking A Restaurant', () => {
+describe('Liking A Food', () => {
   const addLikeButtonContainer = () => {
     document.body.innerHTML = '<div id="likeButtonContainer"></div>';
   };
 
   beforeEach(() => {
-    addLikeButtonContainer();
+      addLikeButtonContainer();
   });
 
   it('should show the like button when the resto has not been liked before', async () => {
     await TestFactories.createLikeButtonPresenterWithMovie({ id: 1 });
 
     expect(document.querySelector('[aria-label="like this resto"]'))
-      .toBeTruthy();
+        .toBeTruthy();
   });
 
   it('should not show the unlike button when the resto has not been liked before', async () => {
