@@ -5,7 +5,7 @@ const addLikeButtonContainer = () => {
   document.body.innerHTML = '<div id="likeButtonContainer"></div>';
 };
 
-describe('Unliking A Movie', () => {
+describe('Unliking A Restaurant', () => {
   beforeEach(async () => {
     addLikeButtonContainer();
     await FavoriteRestIdb.putRestaurant({ id: 1 });
