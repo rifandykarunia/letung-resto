@@ -3,7 +3,11 @@ import CONFIG from '../../globals/config';
 const createRestaurantDetailMenu = (restaurant) => `
   <div class="detail"> 
     <div class="detail__top">
-      <img class="restaurant__poster" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
+    <picture>
+<source class="lazyload restaurant-item__header__poster" data-srcset="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" type="image/webp" media="all and (max-width: 300px)" />        
+<source class="lazyload restaurant-item__header__poster" data-srcset="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" type="image/jpeg" media="all and (max-width: 300px)" />
+<img class="lazyload restaurant-item__header__poster" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}"/>
+</picture>
       <div class="restaurant__info">
           <h3>${restaurant.name}</h3><br>
           <h4>Kota</h4>

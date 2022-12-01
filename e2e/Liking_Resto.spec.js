@@ -38,4 +38,5 @@ Scenario('unliking one resto', ({ I }) => {
     I.click('#likeButton');
 
     I.amOnPage('/#/favorite');
+    I.dontSeeElement('.restaurant-item a');
 });

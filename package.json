@@ -6,6 +6,7 @@
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "build-image": "node sharp.js --unhandled-rejections=strict",
+    "lint": "eslint ./src",
     "test": "karma start",
     "e2e": "codeceptjs run",
     "e2e-step": "codeceptjs run --steps"
